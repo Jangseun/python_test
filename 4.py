@@ -1,7 +1,16 @@
 a = int(input())
+count1 = 0
+count2 = 0
+b = 0
 
-if a >= 1 and a <= 4000:
-    if a % 4 == 0 and a % 100 != 0 or a % 400 == 0:
-        print(1)
-    else:
-        print(0)
+for i in range(1, a+1):
+    b = int(input())
+    if b == 1:
+        count1 += 1
+    elif b == 0:
+        count2 += 1
+
+if count1 > count2:
+    print("Junhee is cute!")
+else:
+    print("Junhee is not cute!")
